@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 900" width="100%" height="100%">
+  <rect width="700" height="900" fill="#1E1D1C" />
+  <circle cx="350" cy="420" r="220" fill="#252422" />
+  <path d="M250 320 C250 200, 450 200, 450 320 C450 480, 400 580, 350 640 C300 580, 250 480, 250 320 Z" fill="#EAE5DE" opacity="0.9" />
+  <rect x="230" y="330" width="240" height="26" fill="#1E1D1C" />
+  <text x="350" y="348" font-family="'Cormorant Garamond', serif" font-size="11" fill="#8C8279" text-anchor="middle" letter-spacing="4">BLINDFOLD OF TRUTH</text>
+  <!-- Long flowing silver hair strands -->
+  <path d="M260 300 Q180 500 220 750" stroke="#D8D2C9" stroke-width="4" fill="none" opacity="0.8" />
+  <path d="M440 300 Q520 500 480 750" stroke="#D8D2C9" stroke-width="4" fill="none" opacity="0.8" />
+  <path d="M290 350 Q230 600 270 820" stroke="#F4F1EC" stroke-width="2.5" fill="none" opacity="0.9" />
+  <path d="M410 350 Q470 600 430 820" stroke="#F4F1EC" stroke-width="2.5" fill="none" opacity="0.9" />
+  <!-- Floating black orbs and shards -->
+  <polygon points="140,240 180,200 160,280" fill="#EAE5DE" opacity="0.8" />
+  <polygon points="520,260 570,220 540,310" fill="#EAE5DE" opacity="0.7" />
+  <polygon points="320,120 380,80 350,150" fill="#8C8279" opacity="0.9" />
+  <!-- Ink splatters -->
+  <circle cx="190" cy="420" r="5" fill="#8C8279" />
+  <circle cx="510" cy="460" r="6" fill="#8C8279" />
+  <circle cx="340" cy="740" r="8" fill="#2B2A28" />
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 850" width="100%" height="100%">
+  <rect width="700" height="850" fill="#1A1918" />
+  <!-- Wings silhouette spreading wide -->
+  <path d="M350 420 C220 280 80 320 30 450 C120 460 220 480 310 520 Z" fill="#2E2C2A" />
+  <path d="M350 420 C480 280 620 320 670 450 C580 460 480 480 390 520 Z" fill="#2E2C2A" />
+  <path d="M350 430 C250 310 130 360 80 480 C160 480 250 500 320 540 Z" fill="#3D3A37" />
+  <path d="M350 430 C450 310 570 360 620 480 C540 480 450 500 380 540 Z" fill="#3D3A37" />
+  <!-- Regal figure with Crow mask -->
+  <polygon points="350,260 385,360 315,360" fill="#EAE5DE" />
+  <polygon points="350,330 420,375 350,360" fill="#1A1918" />
+  <!-- High collar and coat -->
+  <polygon points="315,360 385,360 410,700 290,700" fill="#242322" />
+  <line x1="350" y1="360" x2="350" y2="700" stroke="#77726B" stroke-width="2" />
+  <!-- Loose feathers falling -->
+  <ellipse cx="210" cy="590" rx="6" ry="18" fill="#8C8279" transform="rotate(35 210 590)" />
+  <ellipse cx="490" cy="620" rx="5" ry="16" fill="#8C8279" transform="rotate(-25 490 620)" />
+  <ellipse cx="160" cy="380" rx="4" ry="14" fill="#D8D2C9" transform="rotate(50 160 380)" />
+  <ellipse cx="530" cy="360" rx="4" ry="14" fill="#D8D2C9" transform="rotate(-40 530 360)" />
+</svg>
