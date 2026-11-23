@@ -193,3 +193,39 @@ Panel Admin dirancang sangat sederhana, bersih, dan menggunakan Bahasa Indonesia
 | **`browser-image-compression`** | Mengompresi resolusi dan ukuran file gambar di sisi peramban klien sebelum diunggah ke storage agar menghemat kuota dan mempercepat *load time*. |
 | **`framer-motion`** | Animasi entrance halus untuk seluruh seksi publik, modal pratinjau karya (lightbox), dan notifikasi toast admin. |
 | **`lucide-react`** | Ikon SVG konsisten, ringan, dan tajam yang melengkapi tema desain editorial monokrom. |
+
+---
+
+## 8. Panduan Hosting Live di GitHub Pages
+
+Proyek ini telah dikonfigurasi penuh dengan **GitHub Actions CI/CD** dan **Single Page Application (SPA) routing**.
+
+### Langkah 1: Buat Repositori Baru di GitHub
+1. Masuk ke akun Anda di [github.com](https://github.com).
+2. Klik tombol **New** (atau ikon **+** di pojok kanan atas &rarr; **New repository**).
+3. Beri nama repositori (misalnya `ArtCommision` atau `portfolio`).
+4. Biarkan repositori disetel sebagai **Public**.
+5. Jangan centang "Add a README file" atau ".gitignore" karena sudah tersedia di dalam proyek ini.
+6. Klik **Create repository**.
+
+### Langkah 2: Hubungkan dan Push Kode dari Terminal
+Buka terminal / PowerShell di folder proyek ini (`c:\Users\Muhammad.Fachri\Desktop\ArtCommision`), lalu jalankan perintah berikut (ganti `<USERNAME>` dan `<NAMA-REPO>` sesuai akun Anda):
+
+```bash
+git remote add origin https://github.com/<USERNAME>/<NAMA-REPO>.git
+git branch -M main
+git push -u origin main
+```
+
+### Langkah 3: Aktifkan GitHub Pages melalui GitHub Actions
+1. Di halaman repositori GitHub Anda, buka tab **Settings** &rarr; menu **Pages** di bilah sisi kiri.
+2. Pada bagian **Build and deployment** &rarr; **Source**, pilih:
+   👉 **GitHub Actions**
+3. Buka tab **Actions** di bagian atas repositori. Anda akan melihat workflow **Deploy Portfolio to GitHub Pages** berjalan secara otomatis.
+4. Tunggu sekitar 1-2 menit hingga proses build dan deployment selesai (ikon centang hijau).
+5. Website Anda sekarang sudah live dan dapat diakses dari mana saja di:
+   ```
+   https://<USERNAME>.github.io/<NAMA-REPO>/
+   ```
+   *(Panel Admin dapat diakses di `https://<USERNAME>.github.io/<NAMA-REPO>/admin`)*
+
