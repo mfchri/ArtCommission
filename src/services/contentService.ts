@@ -12,6 +12,7 @@ import { profileData as staticProfileData } from '../data/profile';
 import { worksData as staticWorksData } from '../data/works';
 import { commissionsConfig as staticCommissionsConfig } from '../data/commissions';
 import { contactData as staticContactData } from '../data/contact';
+import defaultContent from '../data/defaultContent.json';
 
 export const LOCAL_STORAGE_KEY = 'kaien_art_cms_bundle_v1';
 export const REVISIONS_STORAGE_KEY = 'kaien_art_cms_revisions_v1';
@@ -58,7 +59,7 @@ export function notifyContentUpdated(bundle?: WebsiteDataBundle): void {
 
 // Initial default bundle snapshot
 export function getDefaultBundle(): WebsiteDataBundle {
-  return {
+  const baseBundle: WebsiteDataBundle = {
     siteSettings: {
       id: 'default',
       artistName: staticSiteConfig.artistName,
@@ -205,6 +206,31 @@ export function getDefaultBundle(): WebsiteDataBundle {
       sortOrder: i,
     })),
   };
+
+  // If a defaultContent snapshot is provided, merge it seamlessly
+  if (defaultContent && Object.keys(defaultContent).length > 0) {
+    const dc = defaultContent as any;
+    return {
+      ...baseBundle,
+      ...dc,
+      siteSettings: { ...baseBundle.siteSettings, ...(dc.siteSettings || dc.site_settings || {}) },
+      intro: { ...baseBundle.intro, ...(dc.intro || {}) },
+      profile: { ...baseBundle.profile, ...(dc.profile || {}) },
+      comicProject: { ...baseBundle.comicProject, ...(dc.comicProject || dc.comic || {}) },
+      commissionsConfig: { ...baseBundle.commissionsConfig, ...(dc.commissionsConfig || dc.commissions || {}) },
+      contactSettings: { ...baseBundle.contactSettings, ...(dc.contactSettings || dc.contact || {}) },
+      artworks: dc.artworks || baseBundle.artworks,
+      categories: dc.categories || baseBundle.categories,
+      commissionTiers: dc.commissionTiers || baseBundle.commissionTiers,
+      commissionAddons: dc.commissionAddons || baseBundle.commissionAddons,
+      commissionSteps: dc.commissionSteps || baseBundle.commissionSteps,
+      commissionTos: dc.commissionTos || baseBundle.commissionTos,
+      commissionFaqs: dc.commissionFaqs || baseBundle.commissionFaqs,
+      socialLinks: dc.socialLinks || baseBundle.socialLinks,
+    };
+  }
+
+  return baseBundle;
 }
 
 // Mapping from AreaKey to WebsiteDataBundle key
