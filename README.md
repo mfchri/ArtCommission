@@ -10,7 +10,11 @@ Dibangun dengan **Vite + React 19 + TypeScript + Tailwind CSS + Framer Motion**,
 
 ```
 ArtCommision/
+├── index.html               # Halaman utama root SPA & skrip redirect GitHub Pages
+├── index.css                # Berkas CSS utama di root (Tailwind, font & variabel tema)
+├── style.css                # Alias stylesheet di root (kompatibilitas GitHub Pages)
 ├── public/
+│   ├── 404.html             # Skrip redirect SPA GitHub Pages (mencegah 404 pada /admin)
 │   ├── assets/              # Aset ilustrasi grafis, sampul komik & avatar
 │   └── robots.txt           # Disallow crawling untuk rute /admin/
 ├── src/
@@ -27,9 +31,12 @@ ArtCommision/
 │   ├── sections/            # Seksi website publik (Hero, Profile, Works, Commissions, Contact)
 │   ├── services/            # Content service (CRUD, draf, revisi snapshot, ekspor/impor)
 │   ├── types/               # Tipe data TypeScript bersama (Public & Admin)
-│   ├── utils/               # Varian animasi Framer Motion
-│   ├── App.tsx              # Router publik ("/") dan admin ("/admin/*")
-│   └── index.css            # Desain token tema Tailwind & tekstur grain kertas
+│   ├── utils/               # Varian animasi Framer Motion & pemeta aset getAssetUrl()
+│   ├── App.tsx              # Router publik ("/") dan admin ("/admin/*") dengan dynamic basename
+│   └── main.tsx             # Entry point React
+├── .github/
+│   └── workflows/
+│       └── deploy.yml       # GitHub Actions otomatis build & deploy ke GitHub Pages
 ├── supabase/
 │   ├── schema.sql           # Skema tabel database PostgreSQL lengkap
 │   ├── policies.sql         # Row Level Security (RLS) policies
