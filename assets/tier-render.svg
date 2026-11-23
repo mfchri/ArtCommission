@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <rect width="400" height="300" fill="#161514" />
+  <defs>
+    <radialGradient id="renderLight" cx="50%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#3D3A37" />
+      <stop offset="100%" stop-color="#141312" />
+    </radialGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#renderLight)" />
+  <!-- Detailed character with shards & cinematic lighting -->
+  <polygon points="60,90 90,70 75,120" fill="#F4F1EC" opacity="0.9" />
+  <polygon points="320,80 355,55 335,115" fill="#F4F1EC" opacity="0.8" />
+  <circle cx="200" cy="105" r="48" fill="#EAE5DE" />
+  <path d="M150 110 C150 50, 250 50, 250 110 C250 200, 230 220, 200 240 C170 220, 150 200, 150 110 Z" fill="#161514" />
+  <path d="M120 260 L180 180 L220 180 L280 260 Z" fill="#292826" stroke="#D8D2C9" stroke-width="1.5" />
+  <polygon points="180,180 220,180 200,240" fill="#8C8279" opacity="0.8" />
+  <text x="200" y="275" font-family="'Inter', sans-serif" font-size="11" fill="#8C8279" text-anchor="middle" letter-spacing="3">FULL RENDER &bull; LIGHTING &bull; PSD</text>
+</svg>

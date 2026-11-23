@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <rect width="400" height="300" fill="#252422" />
+  <!-- Gestural graphite / ink rough sketch -->
+  <path d="M120 180 Q190 70 270 170" stroke="#77726B" stroke-width="2" fill="none" stroke-dasharray="6,4" />
+  <circle cx="200" cy="110" r="45" stroke="#D8D2C9" stroke-width="2" fill="none" opacity="0.8" />
+  <path d="M160 140 Q200 170 240 140" stroke="#8C8279" stroke-width="1.5" fill="none" />
+  <line x1="200" y1="80" x2="200" y2="150" stroke="#77726B" stroke-width="1" stroke-dasharray="2,3" />
+  <path d="M130 250 L180 180 L220 180 L270 250" stroke="#D8D2C9" stroke-width="2" fill="none" />
+  <text x="200" y="275" font-family="'Inter', sans-serif" font-size="11" fill="#8C8279" text-anchor="middle" letter-spacing="3">ROUGH GESTURE &bull; 300 DPI</text>
+</svg>

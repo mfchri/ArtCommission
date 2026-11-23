@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <rect width="400" height="300" fill="#201F1E" />
+  <defs>
+    <pattern id="toneGrid" width="6" height="6" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1" fill="#4A4744" />
+    </pattern>
+  </defs>
+  <!-- Screentone background patch -->
+  <rect x="80" y="60" width="240" height="180" fill="url(#toneGrid)" />
+  <!-- Crisp inking lineart -->
+  <circle cx="200" cy="110" r="42" fill="#EAE5DE" />
+  <path d="M170 100 Q200 65 230 100 Q235 145 200 155 Q165 145 170 100 Z" fill="#1A1918" />
+  <path d="M140 240 L185 170 L215 170 L260 240 Z" fill="#2E2C2A" stroke="#EAE5DE" stroke-width="2" />
+  <!-- Spot blacks & hatching -->
+  <line x1="160" y1="210" x2="180" y2="210" stroke="#EAE5DE" stroke-width="1.5" />
+  <line x1="160" y1="216" x2="176" y2="216" stroke="#EAE5DE" stroke-width="1.5" />
+  <text x="200" y="275" font-family="'Inter', sans-serif" font-size="11" fill="#8C8279" text-anchor="middle" letter-spacing="3">CLEAN INK &bull; HALFTONE</text>
+</svg>

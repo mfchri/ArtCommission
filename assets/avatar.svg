@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <rect width="400" height="400" fill="#1E1D1C" />
+  <defs>
+    <radialGradient id="avatarGlow" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#3A3836" />
+      <stop offset="100%" stop-color="#141312" />
+    </radialGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#avatarGlow)" />
+  <!-- Silhouette head and ink brushstrokes -->
+  <circle cx="200" cy="160" r="65" fill="#EAE5DE" opacity="0.92" />
+  <!-- Flowing dark hair & shadows -->
+  <path d="M135 150 C130 90, 270 90, 265 150 C265 230, 245 280, 200 310 C155 280, 135 230, 135 150 Z" fill="#1E1D1C" />
+  <path d="M150 140 Q200 80 250 140 Q260 210 200 240 Q140 210 150 140 Z" fill="#2B2A28" />
+  <path d="M170 160 Q200 200 230 160 Q215 130 170 160 Z" fill="#F4F1EC" opacity="0.85" />
+  <!-- Shards around portrait -->
+  <polygon points="90,120 120,105 105,140" fill="#D8D2C9" opacity="0.4" />
+  <polygon points="310,180 340,165 325,210" fill="#D8D2C9" opacity="0.5" />
+  <polygon points="120,290 140,270 130,310" fill="#D8D2C9" opacity="0.3" />
+  <polygon points="280,290 310,270 295,315" fill="#D8D2C9" opacity="0.4" />
+  <!-- Collar / shoulders -->
+  <path d="M90 400 L140 310 L260 310 L310 400 Z" fill="#141312" />
+  <line x1="200" y1="310" x2="200" y2="400" stroke="#77726B" stroke-width="2" stroke-dasharray="4,4" />
+  <!-- Label -->
+  <text x="200" y="380" font-family="'Cormorant Garamond', Georgia, serif" font-size="14" fill="#8C8279" text-anchor="middle" letter-spacing="4">KAIEN // ATELIER</text>
+</svg>

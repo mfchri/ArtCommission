@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 850" width="100%" height="100%">
+  <rect width="600" height="850" fill="#1E1D1C" />
+  <defs>
+    <linearGradient id="comicFade" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2D2B29" />
+      <stop offset="60%" stop-color="#1E1D1C" />
+      <stop offset="100%" stop-color="#121110" />
+    </linearGradient>
+    <pattern id="comicHalftone" width="12" height="12" patternUnits="userSpaceOnUse">
+      <circle cx="6" cy="6" r="1.5" fill="#3D3A37" />
+    </pattern>
+  </defs>
+  <rect width="600" height="850" fill="url(#comicFade)" />
+  <rect y="350" width="600" height="500" fill="url(#comicHalftone)" opacity="0.6" />
+  
+  <!-- Moon / celestial disk -->
+  <circle cx="300" cy="300" r="140" fill="none" stroke="#EAE5DE" stroke-width="2" stroke-dasharray="2,6" opacity="0.6" />
+  <circle cx="300" cy="300" r="120" fill="#252422" />
+  
+  <!-- Silhouette monolith & horned figure -->
+  <polygon points="300,160 320,380 280,380" fill="#F4F1EC" opacity="0.9" />
+  <path d="M220 440 Q300 280 380 440 L340 540 L260 540 Z" fill="#EAE5DE" opacity="0.95" />
+  <!-- Dramatic clawed hands & wings -->
+  <path d="M220 440 C140 400 80 480 40 560 C120 530 180 500 240 480 Z" fill="#D8D2C9" opacity="0.5" />
+  <path d="M380 440 C460 400 520 480 560 560 C480 530 420 500 360 480 Z" fill="#D8D2C9" opacity="0.5" />
+
+  <!-- Jagged shards floating -->
+  <polygon points="120,200 160,180 135,240" fill="#F4F1EC" opacity="0.8" />
+  <polygon points="460,220 510,195 480,265" fill="#F4F1EC" opacity="0.75" />
+  <polygon points="190,140 220,110 200,160" fill="#8C8279" opacity="0.6" />
+  <polygon points="390,130 430,105 405,150" fill="#8C8279" opacity="0.6" />
+  <polygon points="260,600 340,600 300,680" fill="#141312" />
+
+  <!-- Comic Framing Borders -->
+  <rect x="30" y="30" width="540" height="790" fill="none" stroke="#77726B" stroke-width="1.5" opacity="0.6" />
+  <rect x="40" y="40" width="520" height="770" fill="none" stroke="#3D3A37" stroke-width="1" />
+
+  <!-- Title block -->
+  <text x="300" y="90" font-family="'Cormorant Garamond', Georgia, serif" font-size="16" fill="#8C8279" text-anchor="middle" letter-spacing="6">VOLUME I &bull; ACT ONE</text>
+  <text x="300" y="740" font-family="'Cormorant Garamond', Georgia, serif" font-size="34" font-weight="600" fill="#F4F1EC" text-anchor="middle" letter-spacing="4">ECHOES OF THE ABYSS</text>
+  <text x="300" y="775" font-family="'Inter', sans-serif" font-size="12" fill="#77726B" text-anchor="middle" letter-spacing="3">STORY &amp; ART BY KAIEN</text>
+</svg>
